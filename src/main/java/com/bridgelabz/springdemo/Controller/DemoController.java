@@ -11,5 +11,9 @@ public class DemoController {
     public String message(){
         return "Hello World";
     }
+    @RequestMapping(value = "/queryparam",method = RequestMethod.GET)
+    public String massage1(@RequestParam String message){
+        return message;
+    }
 
 }
